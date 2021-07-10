@@ -8,7 +8,6 @@ import pl.maram.funbot.data.Constants;
 public class HelpCommand extends AbstractCommand {
 
     public static final String NAME = "help";
-    private String helpMessage;
 
     public HelpCommand(){
         super(NAME);
@@ -26,6 +25,7 @@ public class HelpCommand extends AbstractCommand {
         builder.append("```Dostępne polecenia:\n");
         builder.append(Constants.PREFIX).append("help").append("\n");
         builder.append(Constants.PREFIX).append("hello").append("\n");
+        builder.append(Constants.PREFIX).append("8ball").append("\n");
         builder.append("```");
         return builder.toString();
     }

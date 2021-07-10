@@ -2,6 +2,7 @@ package pl.maram.funbot.commands;
 
 import pl.maram.funbot.commands.basic.HelloCommand;
 import pl.maram.funbot.commands.basic.HelpCommand;
+import pl.maram.funbot.commands.basic.Magic8BallCommand;
 import pl.maram.funbot.commands.model.Command;
 
 import java.util.ArrayList;
@@ -21,9 +22,10 @@ public class CommandManager {
         commands = new ArrayList<>();
         mapCommands = new HashMap<>();
 
-        //add commands here
+        //todo add commands here
         addCommand(new HelloCommand());
         addCommand(new HelpCommand());
+        addCommand(new Magic8BallCommand());
     }
 
     private void addCommand(Command c) {
